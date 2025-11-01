@@ -3,7 +3,7 @@ import ProjectCard from "../../../../components/ProjectCard/ProjectCard";
 import type { ProjectCardProps } from "../../../../components/ProjectCard/ProjectCard";
 import AnimatedComponent from "../../../../components/AnimatedComponent/AnimatedComponent";
 
-const ProjectsSection: React.FC = () => {
+const Projects: React.FC = () => {
 
     const StyledExperience = styled("div")(({ theme }) => ({
         backgroundColor: theme.palette.primary.main,
@@ -77,4 +77,4 @@ const ProjectsSection: React.FC = () => {
     )
 }
 
-export default ProjectsSection
+export default Projects

@@ -3,7 +3,7 @@ import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import SchoolIcon from '@mui/icons-material/School';
 import AnimatedComponent from "../../../../components/AnimatedComponent/AnimatedComponent";
 
-const AboutSection: React.FC = () => {
+const About: React.FC = () => {
 
     const StyledCard = styled(Card)(({ theme }) => ({
         padding: "10px 10px",
@@ -82,4 +82,4 @@ const AboutSection: React.FC = () => {
     )
 }
 
-export default AboutSection
+export default About
