@@ -3,7 +3,7 @@ import Avatar from "../../../../assets/images/avatar.png"
 import DownloadIcon from '@mui/icons-material/Download';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
-import CV from "../../../../assets/pdfs/Open.pdf"
+import CV from "../../../../assets/pdf/Open.pdf"
 
 
 const Hero = () => {
