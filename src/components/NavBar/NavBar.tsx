@@ -52,9 +52,15 @@ export default function Navbar() {
         }
     };
 
+    const NavBar = styled("div")(({ theme }) => ({
+        backgroundColor: theme.palette.tertiary.main,
+        color: theme.palette.tertiary.contrastText
+    }))
+
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="absolute">
+                <NavBar>
                 <StyledMobileToolbar>
                     <IconButton
                         size="large"
@@ -99,6 +105,7 @@ export default function Navbar() {
                         <StyledNavLink>Projects</StyledNavLink>
                     </MenuItem>
                 </StyledDesktopToolbar>
+                </NavBar>
             </AppBar>
         </Box >
     );
