@@ -40,8 +40,8 @@ const About: React.FC = () => {
                             <StyledCard variant="outlined">
                                 <SchoolIcon />
                                 <Typography textAlign="center" fontWeight={600}>Education</Typography>
-                                <Typography textAlign="center">Bachelors Degree</Typography>
-                                <Typography textAlign="center">Electrical Engineer</Typography>
+                                <Typography textAlign="center">I'm in High School</Typography>
+                                <Typography textAlign="center">2022 - 2026</Typography>
                             </StyledCard>
                         </AnimatedComponent>
 
@@ -49,17 +49,7 @@ const About: React.FC = () => {
                 </Grid>
                 <Box pb={1}>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Cras porta semper velit vel rutrum.
-                        Aliquam vulputate, nisi eget tristique mattis, nisi sem faucibus eros, a auctor felis sem ut mauris.
-                        Phasellus a ultrices elit.
-                        Curabitur ut diam eu orci auctor pretium.
-                        Nullam ultricies erat quam, eget porta velit vehicula sit amet.
-                        Nullam sodales iaculis metus, sed vestibulum nisl vulputate at.
-                        Integer in pulvinar libero.
-                        Donec ornare est quis tortor varius efficitur.
-                        Maecenas sed erat quis felis facilisis pellentesque.
-                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id felis convallis, luctus lorem eget, varius dolor.
+                        Sou desenvolvedor full stack com experiência em JavaScript, PHP e bancos de dados, atuando no desenvolvimento e manutenção de sistemas corporativos e integrações com ERP. Gosto de criar soluções práticas e bem estruturadas, com atenção aos detalhes e código limpo. Estou sempre em busca de aprender mais, evoluir nas tecnologias e encarar novos desafios.
                     </Typography>
                 </Box>
                 <hr />

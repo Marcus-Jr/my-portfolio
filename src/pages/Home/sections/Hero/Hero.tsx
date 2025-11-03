@@ -31,14 +31,14 @@ const Hero = () => {
         console.log("download")
         const link = document.createElement('a');
         link.href = CV
-        link.download = 'example.pdf'; 
+        link.download = 'Marcus Junior.pdf'; 
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
     };
 
     const handleEmail = () => {
-        const emailAddress = 'example@example.com';
+        const emailAddress = 'marcusfrancajr@gmail.com';
         const subject = 'Subject';
         const body = 'Hello! I saw your portfolio...';
 
@@ -57,7 +57,7 @@ const Hero = () => {
                     </Grid>
                     <Grid size={{xs:12, md:7}}>
                         <Typography color="primary.contrastText" variant="h1" textAlign={"center"} pb={2}>Marcus Jr</Typography>
-                        <Typography color="primary.contrastText" variant="h2" textAlign={"center"}>I'm a Software Developer</Typography>
+                        <Typography color="primary.contrastText" variant="h2" textAlign={"center"}>Software Developer</Typography>
                         <Grid container display={"flex"} justifyContent={"center"} spacing={3} pt={3}>
                             <Grid size={{xs:12, md:4}} display={"flex"} justifyContent={"center"}>
                                 <StyledButton onClick={() => handleDownload()}>
