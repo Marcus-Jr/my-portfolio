@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                         </IconButton>
                     </Box>
                     <Typography textAlign="center">
-                        © 2025 Marcus Jr - All rights reserved
+                        © 2025 Marcus Jr - Todos os direitos reservados
                     </Typography>
                 </Container>
             </Box>

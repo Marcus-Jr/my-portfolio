@@ -22,29 +22,28 @@ const About: React.FC = () => {
         <>
             <Container maxWidth="lg">
                 <Box id="about" pt={5} mb={3}>
-                    <Typography variant="h2" textAlign="center" >About me</Typography>
+                    <Typography variant="h2" textAlign="center">Sobre mim</Typography>
                 </Box>
                 <Grid container spacing={2} display="flex" justifyContent="center" pb={3}>
-                    <Grid size={{xs:9, md:2.5}}>
+                    <Grid size={{ xs: 9, md: 2.5 }}>
                         <AnimatedComponent moveDirection="right">
                             <StyledCard variant="outlined">
                                 <WorkspacePremiumIcon />
-                                <Typography textAlign="center" fontWeight={600}>Experience</Typography>
-                                <Typography textAlign="center">1+ years</Typography>
-                                <Typography textAlign="center">Full Stack Development</Typography>
+                                <Typography textAlign="center" fontWeight={600}>Experiência</Typography>
+                                <Typography textAlign="center">1+ ano</Typography>
+                                <Typography textAlign="center">Desenvolvimento Full Stack</Typography>
                             </StyledCard>
                         </AnimatedComponent>
                     </Grid>
-                    <Grid size={{xs:9, md:2.5}}>
+                    <Grid size={{ xs: 9, md: 2.5 }}>
                         <AnimatedComponent moveDirection="left">
                             <StyledCard variant="outlined">
                                 <SchoolIcon />
-                                <Typography textAlign="center" fontWeight={600}>Education</Typography>
-                                <Typography textAlign="center">I'm in High School</Typography>
+                                <Typography textAlign="center" fontWeight={600}>Educação</Typography>
+                                <Typography textAlign="center">Cursando Ensino Médio</Typography>
                                 <Typography textAlign="center">2022 - 2026</Typography>
                             </StyledCard>
                         </AnimatedComponent>
-
                     </Grid>
                 </Grid>
                 <Box pb={1}>
@@ -54,12 +53,12 @@ const About: React.FC = () => {
                 </Box>
                 <hr />
                 <Box id="skills" pt={1} mb={3}>
-                    <Typography variant="h3" textAlign="center" fontWeight={300}>Skills</Typography>
+                    <Typography variant="h3" textAlign="center" fontWeight={300}>Habilidades</Typography>
                 </Box>
                 <Box mb={5}>
                     <Grid container spacing={3} justifyContent="center">
                         {skillsSet.map((skill, index) => (
-                            <Grid key={index} size={{xs:5, sm:4, md:2, lg:2}}>
+                            <Grid key={index} size={{ xs: 5, sm: 4, md: 2, lg: 2 }}>
                                 <StyledCard variant="outlined">
                                     {skill}
                                 </StyledCard>

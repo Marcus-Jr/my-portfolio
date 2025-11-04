@@ -61,50 +61,50 @@ export default function Navbar() {
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="absolute">
                 <NavBar>
-                <StyledMobileToolbar>
-                    <IconButton
-                        size="large"
-                        aria-label="account of current user"
-                        aria-controls="menu-appbar"
-                        aria-haspopup="true"
-                        onClick={handleMenu}
-                        color="inherit"
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                    <Menu
-                        id="menu-appbar"
-                        anchorEl={anchorEl}
-                        anchorOrigin={{
-                            vertical: 'top',
-                            horizontal: 'right',
-                        }}
-                        keepMounted
-                        open={Boolean(anchorEl)}
-                        onClose={handleClose}
-                    >
+                    <StyledMobileToolbar>
+                        <IconButton
+                            size="large"
+                            aria-label="menu do usuário atual"
+                            aria-controls="menu-appbar"
+                            aria-haspopup="true"
+                            onClick={handleMenu}
+                            color="inherit"
+                        >
+                            <MenuIcon />
+                        </IconButton>
+                        <Menu
+                            id="menu-appbar"
+                            anchorEl={anchorEl}
+                            anchorOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            keepMounted
+                            open={Boolean(anchorEl)}
+                            onClose={handleClose}
+                        >
+                            <MenuItem onClick={() => handleSmoothScroll("about")}>
+                                <StyledNavLink>Sobre</StyledNavLink>
+                            </MenuItem>
+                            <MenuItem onClick={() => handleSmoothScroll("skills")}>
+                                <StyledNavLink>Habilidades</StyledNavLink>
+                            </MenuItem>
+                            <MenuItem onClick={() => handleSmoothScroll("projects")}>
+                                <StyledNavLink>Projetos</StyledNavLink>
+                            </MenuItem>
+                        </Menu>
+                    </StyledMobileToolbar>
+                    <StyledDesktopToolbar variant="regular">
                         <MenuItem onClick={() => handleSmoothScroll("about")}>
-                            <StyledNavLink>About</StyledNavLink>
+                            <StyledNavLink>Sobre</StyledNavLink>
                         </MenuItem>
                         <MenuItem onClick={() => handleSmoothScroll("skills")}>
-                            <StyledNavLink>Skills</StyledNavLink>
+                            <StyledNavLink>Habilidades</StyledNavLink>
                         </MenuItem>
                         <MenuItem onClick={() => handleSmoothScroll("projects")}>
-                            <StyledNavLink>Projects</StyledNavLink>
+                            <StyledNavLink>Projetos</StyledNavLink>
                         </MenuItem>
-                    </Menu>
-                </StyledMobileToolbar>
-                <StyledDesktopToolbar variant="regular">
-                    <MenuItem onClick={() => handleSmoothScroll("about")}>
-                        <StyledNavLink>About</StyledNavLink>
-                    </MenuItem>
-                    <MenuItem onClick={() => handleSmoothScroll("skills")}>
-                        <StyledNavLink>Skills</StyledNavLink>
-                    </MenuItem>
-                    <MenuItem onClick={() => handleSmoothScroll("projects")}>
-                        <StyledNavLink>Projects</StyledNavLink>
-                    </MenuItem>
-                </StyledDesktopToolbar>
+                    </StyledDesktopToolbar>
                 </NavBar>
             </AppBar>
         </Box >
