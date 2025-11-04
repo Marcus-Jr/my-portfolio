@@ -14,10 +14,10 @@ declare module '@mui/material/styles' {
 let theme = createTheme({
   palette: {
     primary: {
-      main: '#060422ff',
+      main: '#013035ff',
     },
     secondary: {
-      main: '#1F9FFB',
+      main: '#03A688',  
     },
     tertiary: {
       main: '#000000ff'
