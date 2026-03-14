@@ -8,7 +8,7 @@ import portfolioImg from "../../../../assets/images/portfolio.png";
 import snakeImg from "../../../../assets/images/snake-game-over.png";
 import taskFlowImg from "../../../../assets/images/task-flow.png";
 import ongImg from "../../../../assets/images/ong-outubro-rosa.png";
-import snipIoImg from "../../../../assets/images/snip-io3.png";
+import snipIoImg from "../../../../assets/images/snip-io.png";
 
 
 const Projects: React.FC = () => {
