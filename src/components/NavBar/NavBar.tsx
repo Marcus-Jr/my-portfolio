@@ -7,10 +7,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import { styled } from '@mui/material';
+import theme from '../../theme';
 
 export const StyledNavLink = styled("a")(() => ({
     textDecoration: "none",
-    color: "inherit"
+    color: "inherit",
+    '&:hover': {
+        color: theme.palette.secondary.light
+    },
 }));
 
 export const StyledMobileToolbar = styled(Toolbar)(({ theme }) => ({
@@ -53,8 +57,8 @@ export default function Navbar() {
     };
 
     const NavBar = styled("div")(({ theme }) => ({
-        backgroundColor: theme.palette.tertiary.main,
-        color: theme.palette.tertiary.contrastText
+        backgroundColor: theme.palette.primary.main,
+        color: theme.palette.primary.contrastText
     }))
 
     return (
