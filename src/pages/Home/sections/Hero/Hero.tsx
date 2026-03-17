@@ -4,15 +4,15 @@ import DownloadIcon from '@mui/icons-material/Download';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import CV from "../../../../assets/pdf/Open.pdf";
-import Background from "../../../../assets/images/paisagem.jpg";
-
+import AnimatedBackground from "../../../../components/AnimatedBackground/AnimatedBackground";
 
 const Hero = () => {
 
     const StyledHero = styled("div")(({ theme }) => ({
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${Background})`,        backgroundSize: "cover",            
-        backgroundPosition: "center",        
-        backgroundRepeat: "no-repeat",
+        // backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${Background})`,        backgroundSize: "cover",            
+        // backgroundPosition: "center",        
+        // backgroundRepeat: "no-repeat",
+        backgroundColor: theme.palette.primary.main,
         height: "100vh",
         display: "flex",
         alignItems: "center",
@@ -53,17 +53,13 @@ const Hero = () => {
         <>
             <StyledHero>
                 <Container maxWidth={"lg"}>
-                    <Grid container spacing={2}>
-                        <Grid size={{ xs: 12, md: 5 }}>
-                            <Box position={"relative"} textAlign={"center"}>
-                                <StyledImg src={Avatar} />
-                            </Box>
-                        </Grid>
+                    <AnimatedBackground />
+                    <Grid container spacing={2} position={"relative"}>
                         <Grid size={{ xs: 12, md: 7 }}>
-                            <Typography color="primary.contrastText" variant="h1" textAlign={"center"} pb={2}>Marcus Jr</Typography>
-                            <Typography color="primary.contrastText" variant="h2" textAlign={"center"}>Desenvolvedor de Software</Typography>
-                            <Grid container display={"flex"} justifyContent={"center"} spacing={3} pt={3}>
-                                <Grid size={{ xs: 12, md: 4 }} display={"flex"} justifyContent={"center"}>
+                            <Typography color="primary.contrastText" variant="h1" textAlign={"left"} pb={2}>Marcus Jr</Typography>
+                            <Typography color="secondary.main" variant="h2" textAlign={"left"}>Desenvolvedor de Software</Typography>
+                            <Grid container display={"flex"} justifyContent={"left"} spacing={3} pt={3}>
+                                <Grid size={{ xs: 12, md: 4 }} display={"flex"} justifyContent={"left"}>
                                     <StyledButton onClick={() => handleDownload()}>
                                         <DownloadIcon />
                                         <Typography>
@@ -71,7 +67,7 @@ const Hero = () => {
                                         </Typography>
                                     </StyledButton>
                                 </Grid>
-                                <Grid size={{ xs: 12, md: 4 }} display={"flex"} justifyContent={"center"}>
+                                <Grid size={{ xs: 12, md: 4 }} display={"flex"} justifyContent={"left"}>
                                     <StyledButton onClick={() => handleEmail()}>
                                         <MailOutlineIcon />
                                         <Typography>
@@ -80,6 +76,11 @@ const Hero = () => {
                                     </StyledButton>
                                 </Grid>
                             </Grid>
+                        </Grid>
+                        <Grid size={{ xs: 12, md: 5 }}>
+                            <Box textAlign={"center"}>
+                                <StyledImg src={Avatar} />
+                            </Box>
                         </Grid>
                     </Grid>
                 </Container>
