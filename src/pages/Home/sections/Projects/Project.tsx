@@ -5,10 +5,10 @@ import AnimatedComponent from "../../../../components/AnimatedComponent/Animated
 
 // Imagens dos projetos
 import portfolioImg from "../../../../assets/images/portfolio.png";
-import snakeImg from "../../../../assets/images/snake-game-over.png";
-import taskFlowImg from "../../../../assets/images/task-flow.png";
-import ongImg from "../../../../assets/images/ong-outubro-rosa.png";
-import snipIoImg from "../../../../assets/images/snip-io.png";
+import snakeImg from "../../../../assets/images/mockup-images/mockup-snakegame.png";
+import taskFlowImg from "../../../../assets/images/mockup-images/mockup-taskflow.png";
+import ongImg from "../../../../assets/images/mockup-images/mockup-ong.png";
+import snipIoImg from "../../../../assets/images/mockup-images/mockup-snipio.png";
 
 const StyledExperience = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
