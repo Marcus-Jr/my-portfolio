@@ -26,6 +26,11 @@ const moveFromRightToLeft = keyframes`
   }
     `
 
+const StyledAnimationComponent = styled("div")<{ startAnimation: boolean, moveDirection: string }>(({ startAnimation, moveDirection }) => ({
+    animation: startAnimation ? `${moveDirection} 1s linear` : "none",
+    height: "100%",
+}));
+
 const AnimationComponent: React.FC<AnimationComponentProps> = ({ children, moveDirection }) => {
 
     const componentRef = useRef(null);
@@ -48,10 +53,6 @@ const AnimationComponent: React.FC<AnimationComponentProps> = ({ children, moveD
             observer.disconnect();
         };
     }, []);
-
-    const StyledAnimationComponent = styled("div")<{ startAnimation: boolean, moveDirection: string }>(({ startAnimation, moveDirection }) => ({
-        animation: startAnimation ? `${moveDirection} 1s linear` : "none"
-    }));
 
     return (
         <StyledAnimationComponent
