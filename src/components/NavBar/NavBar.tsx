@@ -1,15 +1,14 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import { styled, Typography } from '@mui/material';
-import theme from '../../theme';
+import { styled, Typography, useTheme } from '@mui/material';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
-export const StyledNavLink = styled("a")(() => ({
+export const StyledNavLink = styled("a")(( { theme } ) => ({
     textDecoration: "none",
     color: "inherit",
     '&:hover': {
@@ -39,6 +38,7 @@ export const StyledDesktopToolbar = styled(Toolbar)(({ theme }) => ({
 
 export default function Navbar() {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+    const theme = useTheme();
 
     const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorEl(event.currentTarget);
@@ -62,9 +62,10 @@ export default function Navbar() {
     }))
 
     return (
-            <AppBar position="sticky">
+            <AppBar position="sticky" sx={{ backgroundColor: theme.palette.primary.main }}>
                 <NavBar>
                     <StyledMobileToolbar>
+                        <ThemeToggle />
                         <IconButton
                             size="large"
                             aria-label="menu do usuário atual"
@@ -114,6 +115,9 @@ export default function Navbar() {
                         </MenuItem>
                         <MenuItem onClick={() => handleSmoothScroll("projects")}>
                             <StyledNavLink>Projetos</StyledNavLink>
+                        </MenuItem>
+                        <MenuItem>
+                            <ThemeToggle />
                         </MenuItem>
                     </StyledDesktopToolbar>
                 </NavBar>
