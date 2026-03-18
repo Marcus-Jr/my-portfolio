@@ -7,17 +7,17 @@ const Footer: React.FC = () => {
 
     return (
         <>
-            <Box pt={2} pb={2}>
+            <Box pt={2} pb={2} sx={{ backgroundColor: "primary.main", color: "primary.contrastText" }}>
                 <Container maxWidth="sm">
                     <Box display="flex" alignItems="center" justifyContent="space-around" pb={1}>
                         <IconButton onClick={() => window.open("https://github.com/Marcus-Jr")}>
-                            <GitHubIcon />
+                            <GitHubIcon sx={{ color: "primary.contrastText" }}/>
                         </IconButton>
                         <IconButton onClick={() => window.open("https://www.linkedin.com/in/marcus-junior/")}>
-                            <LinkedInIcon />
+                            <LinkedInIcon sx={{ color: "primary.contrastText" }} />
                         </IconButton>
                         <IconButton href="mailto:marcusfrancajr@gmail.com" target="_blank">
-                            <EmailIcon />
+                            <EmailIcon sx={{ color: "primary.contrastText" }}/>
                         </IconButton>
                     </Box>
                     <Typography textAlign="center">
