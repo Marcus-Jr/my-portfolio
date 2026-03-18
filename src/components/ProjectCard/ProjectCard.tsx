@@ -1,7 +1,7 @@
 import { Grid, Typography, styled, Box} from "@mui/material";
 import StyledButton from "../StyledButton/StyledButton";
 import GitHubIcon from '@mui/icons-material/GitHub';
-import WysiwygIcon from '@mui/icons-material/Wysiwyg';
+import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 
 const badgeLinks: Record<string, string> = {
     "React": "https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black",
@@ -38,8 +38,8 @@ const StyledImg = styled("img")(({ theme }) => ({
 
 const StyledCard = styled("div")(({ theme }) => ({
     borderRadius: "8px",
-    border: `0.5px solid  ${theme.palette.primary.contrastText}`,
-    boxShadow: `0 4px 8px 0 ${theme.palette.primary.contrastText}`,
+    border: `0.2px solid  ${theme.palette.primary.contrastText}`,
+    boxShadow: `0 2px 2px 0 ${theme.palette.primary.contrastText}`,
     backgroundColor: "transparent",
     height: "100%",
     display: "flex",
@@ -82,14 +82,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <Grid container spacing={1} pt={2} sx={{ marginTop: "auto" }}>
                 <Grid size={{ xs: 6 }}>
                     <StyledButton onClick={() => window.open(websiteURL)}>
-                        <WysiwygIcon />
-                        Ver Projeto
+                        <VisibilityOutlinedIcon />
+                        Deploy
                     </StyledButton>
                 </Grid>
                 <Grid size={{ xs: 6 }}>
                     <StyledButton onClick={() => window.open(codeURL)}>
                         <GitHubIcon/>
-                        Ver Código
+                        Github
                     </StyledButton>
                 </Grid>
             </Grid>
