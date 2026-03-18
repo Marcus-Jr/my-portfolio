@@ -6,7 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import { styled } from '@mui/material';
+import { styled, Typography } from '@mui/material';
 import theme from '../../theme';
 
 export const StyledNavLink = styled("a")(() => ({
@@ -62,8 +62,7 @@ export default function Navbar() {
     }))
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="absolute">
+            <AppBar position="sticky">
                 <NavBar>
                     <StyledMobileToolbar>
                         <IconButton
@@ -99,6 +98,14 @@ export default function Navbar() {
                         </Menu>
                     </StyledMobileToolbar>
                     <StyledDesktopToolbar variant="regular">
+                        <MenuItem>
+                            <Typography variant='h6'>
+
+                                {'<Marcus '}
+                                <Typography component="span" variant='h6' color="secondary.main">Jr</Typography>
+                                {'/>'}
+                            </Typography>
+                        </MenuItem>
                         <MenuItem onClick={() => handleSmoothScroll("about")}>
                             <StyledNavLink>Sobre</StyledNavLink>
                         </MenuItem>
@@ -111,6 +118,5 @@ export default function Navbar() {
                     </StyledDesktopToolbar>
                 </NavBar>
             </AppBar>
-        </Box >
     );
 }
