@@ -1,5 +1,5 @@
 import { Box, Container, Grid, styled, Typography } from "@mui/material";
-import Avatar from "../../../../assets/images/avatar.png";
+import Laptop from "../../../../assets/images/laptop-ia.png";
 import DownloadIcon from '@mui/icons-material/Download';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
@@ -25,9 +25,8 @@ const Hero = () => {
     }))
 
     const StyledImg = styled("img")(({ theme }) => ({
-        width: "75%",
-        borderRadius: "50%",
-        border: `1px solid ${theme.palette.primary.contrastText}`
+        width: "100%",
+        // border: `1px solid ${theme.palette.primary.contrastText}`
     }))
 
     const handleDownload = () => {
@@ -55,7 +54,7 @@ const Hero = () => {
                 <Container maxWidth={"lg"}>
                     <AnimatedBackground />
                     <Grid container spacing={2} position={"relative"}>
-                        <Grid size={{ xs: 12, md: 7 }}>
+                        <Grid size={{ xs: 12, md: 6 }}>
                             <Typography color="primary.contrastText" variant="h1" textAlign={"left"} pb={2}>Marcus Jr</Typography>
                             <Typography color="secondary.main" variant="h2" textAlign={"left"}>Desenvolvedor de Software</Typography>
                             <Grid container display={"flex"} justifyContent={"left"} spacing={3} pt={3}>
@@ -77,9 +76,9 @@ const Hero = () => {
                                 </Grid>
                             </Grid>
                         </Grid>
-                        <Grid size={{ xs: 12, md: 5 }}>
+                        <Grid size={{ xs: 12, md: 6 }}>
                             <Box textAlign={"center"}>
-                                <StyledImg src={Avatar} />
+                                <StyledImg src={Laptop} />
                             </Box>
                         </Grid>
                     </Grid>
