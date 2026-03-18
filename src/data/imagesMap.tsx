@@ -1,4 +1,4 @@
-import portfolio from "../assets/images/portfolio.png";
+import portfolio from "../assets/images/mockup-images/mockup-portfolio.png";
 import snakegame from "../assets/images/mockup-images/mockup-snakegame.png";
 import taskflow from "../assets/images/mockup-images/mockup-taskflow.png";
 import ong from "../assets/images/mockup-images/mockup-ong.png";
