@@ -54,9 +54,14 @@ const Hero = () => {
                 <Container maxWidth={"lg"}>
                     <AnimatedBackground />
                     <Grid container spacing={2} position={"relative"}>
-                        <Grid size={{ xs: 12, md: 6 }}>
-                            <Typography color="primary.contrastText" variant="h1" textAlign={"left"} pb={2}>Marcus Jr</Typography>
-                            <Typography color="secondary.main" variant="h2" textAlign={"left"}>Desenvolvedor de Software</Typography>
+                        <Grid size={{ xs: 12, md: 6 }} order={{ xs: 1, md: 2 }}>
+                            <Box textAlign={"center"}>
+                                <StyledImg src={Laptop} />
+                            </Box>
+                        </Grid>
+                        <Grid size={{ xs: 12, md: 6 }} order={{ xs: 2, md: 1 }}>
+                            <Typography color="primary.contrastText" variant="h1" textAlign={{ xs: "center", md: "left" }} pb={2}>Marcus Jr</Typography>
+                            <Typography color="secondary.main" variant="h2" textAlign={{ xs: "center", md: "left" }}>Desenvolvedor de Software</Typography>
                             <Grid container display={"flex"} justifyContent={"left"} spacing={3} pt={3}>
                                 <Grid size={{ xs: 12, md: 4 }} display={"flex"} justifyContent={"left"}>
                                     <StyledButton onClick={() => handleDownload()}>
@@ -75,11 +80,6 @@ const Hero = () => {
                                     </StyledButton>
                                 </Grid>
                             </Grid>
-                        </Grid>
-                        <Grid size={{ xs: 12, md: 6 }}>
-                            <Box textAlign={"center"}>
-                                <StyledImg src={Laptop} />
-                            </Box>
                         </Grid>
                     </Grid>
                 </Container>
