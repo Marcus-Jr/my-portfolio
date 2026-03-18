@@ -2,7 +2,6 @@ import { Box, Card, Container, Grid, Typography, styled } from "@mui/material"
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import SchoolIcon from '@mui/icons-material/School';
 import AnimatedComponent from "../../../../components/AnimatedComponent/AnimatedComponent";
-import AnimatedBackground from "../../../../components/AnimatedBackground/AnimatedBackground";
 import { alpha } from "@mui/material/styles";
 import { Tooltip } from "@mui/material";
 import { Divider } from "@mui/material";
