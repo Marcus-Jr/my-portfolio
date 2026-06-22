@@ -4,7 +4,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import CV from "../../../../assets/pdf/Open.pdf";
 import AnimatedBackground from "../../../../components/AnimatedBackground/AnimatedBackground";
-import Avatar from "../../../../assets/images/avatar_sentado_black_shirt.png";
+import Avatar from "../../../../assets/images/avatar.png";
 
 const Hero = () => {
 

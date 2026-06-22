@@ -91,8 +91,8 @@ const About: React.FC = () => {
                             <StyledCard variant="outlined">
                                 <SchoolIcon sx={{ color: "primary.contrastText" }} />
                                 <Typography textAlign="center" fontWeight={600} color="primary.contrastText">Educação</Typography>
-                                <Typography textAlign="center" color="primary.contrastText">Cursando Ensino Médio</Typography>
-                                <Typography textAlign="center" color="primary.contrastText">2022 - 2026</Typography>
+                                <Typography textAlign="center" color="primary.contrastText">Cursando Análise e Desenvolvimento de Sistemas</Typography>
+                                <Typography textAlign="center" color="primary.contrastText">2026 - 2029</Typography>
                             </StyledCard>
                         </AnimatedComponent>
                     </Grid>
